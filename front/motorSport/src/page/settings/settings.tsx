@@ -1,15 +1,22 @@
 import Style from "../dashboard/dashboard.module.css";
-import style from "./index.module.css"
+import style from "./index.module.css";
 import Menu from "../../components/Asside/menu";
-import { FaEdit } from "react-icons/fa";
+import ModalAdd from "./modalAddUser";
+import { useState } from "react";
+import { FaEdit, FaUser } from "react-icons/fa";
 import { users } from "../../components/mock/mock.mock";
-
+import { BiTrash } from "react-icons/bi";
 
 const Settings = () => {
+  const [status,setStatus] = useState<boolean>(true)
   return (
     <div className={Style.dashboardContainer}>
       <Menu name="Configurações" />
-      <div className={Style.content}>
+      <ModalAdd
+      status={status}
+      setStatus={setStatus}
+      />
+      <div className={`${Style.content} ${style.content}`}>
         <div className={style.userList}>
           <table className={style.userTable}>
             <thead>
@@ -27,13 +34,29 @@ const Settings = () => {
                   <td>{user.email}</td>
                   <td>{user.cargo}</td>
                   <td>
-                    <FaEdit style={{ cursor: "pointer", color: "#4a90e2" }} title="Editar usuário" />
+                    <FaEdit
+                      style={{ cursor: "pointer", color: "#4a90e2" }}
+                      title="Editar usuário"
+                    />
+                    <BiTrash
+                      style={{
+                        cursor: "pointer",
+                        color: "red",
+                        marginLeft: "10px",
+                      }}
+                      title="Deletar usuário"
+                    />
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <button
+        onClick={()=>setStatus(true)}
+        >
+          Novo usuário <FaUser />
+        </button>
       </div>
     </div>
   );

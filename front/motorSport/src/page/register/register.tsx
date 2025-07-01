@@ -28,6 +28,7 @@ const MotoForm = () => {
 
       <input
         type="text"
+        name="model"
         value={formData.model}
         placeholder="Modelo"
         onChange={handleChange}
@@ -36,6 +37,7 @@ const MotoForm = () => {
 
       <input
         type="text"
+        name="brand"
         value={formData.brand}
         placeholder="Marca"
         onChange={handleChange}

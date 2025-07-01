@@ -11,30 +11,41 @@ export const menuItems = [
   { label: "Dashboard", icon: FaTachometerAlt,path: "/dashboard" },
   { label: "Registar", icon: FaUserPlus,path: "/register" },
   { label: "Vender", icon:  FaShoppingCart,path: "/sale" },
-  { label: "Configurações", icon: FaCog,path: "/settings" },
+  { label: "Usuários", icon: FaCog,path: "/settings" },
   { label: "Sair", icon: FaSignOutAlt,path:"logout" },
 ];
 
 export const motas:  MotoCard[] = [
   {
+    id:"2345tgfdfdef3frferfrfrf",
     model: "CBR 500R",
     brand: "Honda",
     price: "1.200.000",
     status: "Disponível",
     photo: "https://i.redd.it/j83yp2e98byd1.jpeg", 
   },{
+    id:"2345tgfdfdef3frferfrfrf",
     model: "CBR 500R",
     brand: "Honda",
     price: "1.200.000",
     status: "Disponível",
     photo: "https://i.redd.it/j83yp2e98byd1.jpeg", 
   },{
+    id:"2345tgfdfdef3frferfrfrf",
     model: "CBR 500R",
     brand: "Honda",
     price: "1.200.000",
     status: "Disponível",
     photo: "https://i.redd.it/j83yp2e98byd1.jpeg", 
   },{
+    id:"2345tgfdfdef3frferfrfrf",
+    model: "CBR 500R",
+    brand: "Honda",
+    price: "1.200.000",
+    status: "Disponível",
+    photo: "https://i.redd.it/j83yp2e98byd1.jpeg", 
+  },{
+    id:"2345tgfdfdef3frferfrfrf",
     model: "CBR 500R",
     brand: "Honda",
     price: "1.200.000",
