@@ -1,0 +1,39 @@
+.dashboardContainer{
+    display: flex;
+}
+
+.content{
+    width: 80%;
+    overflow: hidden;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/moto1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #00000019;
+}
+
+.motoList{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.motoList::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+.motoList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}

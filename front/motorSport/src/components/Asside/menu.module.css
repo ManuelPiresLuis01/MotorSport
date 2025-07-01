@@ -1,0 +1,55 @@
+.menuContainer {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 400px;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menuContainer::-webkit-scrollbar {
+  width: 0;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  background-color: #ffffff;
+}
+
+.name {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.menuContainer ul {
+  margin-top: 50px;
+}
+
+.menuContainer li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+  padding: 30px 10px;
+  cursor: pointer;
+}
+
+.menuContainer span {
+  font-size: 25px;
+}
+
+.menuContainer li:hover {
+  background-color: #6b7279;
+}
+
+
+.active{
+      background-color: #6b7279;
+}

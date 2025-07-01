@@ -1,0 +1,54 @@
+.loginContainer{
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+
+.loginContainer form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer  input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.loginContainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginContainer button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loginContainer button:hover{
+    background-color: #035cbc;
+}
+
+.loginContainer form div{
+    width: 400px;
+    
+    padding: 10px;
+}
+
+.background{
+    width: 50%;
+    background: url(../../assets/moto.jpg);
+    background-size: cover;
+    background-position: center;
+}
