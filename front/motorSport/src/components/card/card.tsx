@@ -1,5 +1,7 @@
 import Style from "./card.module.css";
 import type { DashboardCardProps, MotoCardProps } from "../types/types.types";
+import SaleModal from "../../page/sale/salemodal";
+import { useState } from "react";
 
 const DashboardCard: React.FC<DashboardCardProps> = ({
   title,
@@ -21,8 +23,14 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
 };
 
 const MotoCard: React.FC<MotoCardProps> = ({ moto }) => {
+  const [status, setStatus] = useState<boolean>(false);
   return (
     <div className={Style.motocard}>
+      <SaleModal
+        motoId={moto.id}
+        status={status}
+        setStatus={setStatus}
+      />
       {moto.photo && (
         <img
           src={
@@ -46,7 +54,7 @@ const MotoCard: React.FC<MotoCardProps> = ({ moto }) => {
           <strong>Status:</strong> {moto.status}
         </p>
       </div>
-      <button >Vender</button>
+      <button onClick={()=> setStatus(true)}>Vender</button>
     </div>
   );
 };
