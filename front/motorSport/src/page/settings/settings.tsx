@@ -7,15 +7,17 @@ import { FaEdit, FaUser } from "react-icons/fa";
 import { users } from "../../components/mock/mock.mock";
 import { BiTrash } from "react-icons/bi";
 
+interface User {
+  username: string;
+  email: string;
+  cargo: string;
+}
 const Settings = () => {
-  const [status,setStatus] = useState<boolean>(true)
+  const [status, setStatus] = useState<boolean>(true);
   return (
     <div className={Style.dashboardContainer}>
       <Menu name="Configurações" />
-      <ModalAdd
-      status={status}
-      setStatus={setStatus}
-      />
+      <ModalAdd status={status} setStatus={setStatus} />
       <div className={`${Style.content} ${style.content}`}>
         <div className={style.userList}>
           <table className={style.userTable}>
@@ -28,7 +30,7 @@ const Settings = () => {
               </tr>
             </thead>
             <tbody>
-              {users.map((user, index) => (
+              {users.map((user: User, index: number) => (
                 <tr key={index}>
                   <td>{user.username}</td>
                   <td>{user.email}</td>
@@ -52,9 +54,7 @@ const Settings = () => {
             </tbody>
           </table>
         </div>
-        <button
-        onClick={()=>setStatus(true)}
-        >
+        <button onClick={() => setStatus(true)}>
           Novo usuário <FaUser />
         </button>
       </div>
