@@ -1,12 +1,12 @@
 import Style from "./index.module.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleLogin = (event: React.FormEvent) => {
-        event.preventDefault();
-        return navigate("/dashboard");
+         event.preventDefault();
+        // return navigate("/dashboard");
     }
   return (
     <div className={Style.loginContainer}>
