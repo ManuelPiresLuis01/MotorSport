@@ -10,7 +10,7 @@ import { BiTrash } from "react-icons/bi";
 interface User {
   username: string;
   email: string;
-  cargo: string;
+  role: string;
 }
 const Settings = () => {
   const [status, setStatus] = useState<boolean>(true);
@@ -34,7 +34,7 @@ const Settings = () => {
                 <tr key={index}>
                   <td>{user.username}</td>
                   <td>{user.email}</td>
-                  <td>{user.cargo}</td>
+                  <td>{user.role}</td>
                   <td>
                     <FaEdit
                       style={{ cursor: "pointer", color: "#4a90e2" }}

@@ -55,7 +55,7 @@ export const motas:  MotoCard[] = [
 ];
 
 export const users = [
-  { username: "manuel.luis", email: "manuel@example.com", cargo: "Admin" },
-  { username: "sara.santos", email: "sara@example.com", cargo: "Gestor" },
-  { username: "pedro.paz", email: "pedro@example.com", cargo: "Operador" },
+  { username: "manuel.luis", email: "manuel@example.com", role: "Admin" },
+  { username: "sara.santos", email: "sara@example.com", role: "Gestor" },
+  { username: "pedro.paz", email: "pedro@example.com", role: "Operador" },
 ];
